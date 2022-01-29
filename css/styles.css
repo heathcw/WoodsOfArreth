@@ -52,7 +52,6 @@
 	height: 500px;
 	width: 333px;
 	border: 2px solid black;
-	padding: 100px;
 }
 
 .footer {
@@ -129,7 +128,7 @@ a {
         text-align: center;
 }
 
-br {
+.break {
 	background-color: #E0C4BA;
 }
 

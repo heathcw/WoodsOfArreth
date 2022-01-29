@@ -3,7 +3,7 @@
 }
 
 .navbar-custom {
-        background-color: #6A74EB;
+        background-color: #669147;
 }
 
 .nav-link a {
@@ -26,11 +26,12 @@
 	color: #2D33B3;
 	text-align: center;
 	align: center;
-	padding: 200px;
+	vertical-align: middle;
 	font-family: 'UnifrakturCook', cursive;
 	background-color: #94DE62;
 	border: 5px solid #669147;
 	font-size: 40px;
+	width: 400px;
 }
 
 .content {
@@ -51,13 +52,22 @@
 
 .footer {
 	display: flex;
-	background-color: #6A74EB;
+	background-color: #669147;
 	position: fixed;
 	bottom: 0;
 	justify-content: space-between;
 	width: 100%;
 	color: black;
 	text-decoration: none;
+
+}
+
+.footer .git-link {
+	padding-left: 10px;
+}
+
+.footer .buy-link {
+	padding-right: 10px;
 }
 
 a {

@@ -23,15 +23,18 @@
 }
 
 .background-image h1 {
+	position: fixed;
 	color: #2D33B3;
 	text-align: center;
-	align: center;
-	vertical-align: middle;
+	vertical-align: center;
 	font-family: 'UnifrakturCook', cursive;
 	background-color: #94DE62;
 	border: 5px solid #669147;
 	font-size: 40px;
 	width: 400px;
+	top: 200px;
+	left: 300px;
+	right: 300px;
 }
 
 .content {

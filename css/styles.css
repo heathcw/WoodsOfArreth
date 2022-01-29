@@ -112,16 +112,16 @@ a {
 	justify-items: center;
 }
 
-.books-grid .books-conatiner {
+.books-grid .book-conatiner {
 	font-family: 'Sedgwick Ave', cursive;
 	text-align: center;
 }
 
-.books-grind .books-container img {
+.books-grid .book-container img {
 	border: 2px solid black;
 }
 
-.books-grid .books-container p {
+.books-grid .book-container .book-caption {
 	padding: 5px;
 }
 

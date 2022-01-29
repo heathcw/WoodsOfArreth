@@ -6,8 +6,8 @@
         background-color: #669147;
 }
 
-.collapse .navbar-collapse .navbar-nav .nav-item .active .nav-link a {
-	color: black;
+.navbar .nav-link {
+	color: #2D33B3;
 }
 
 .navbar-brand img {
@@ -68,15 +68,12 @@
 
 .footer .git-link {
 	padding-left: 10px;
+	color: #2D33B3;
 }
 
 .footer .buy-link {
 	padding-right: 10px;
-}
-
-a {
-	color: #669147;
-	text-decoration: none;
+	color: #2D33B3;
 }
 
 .image-grid {

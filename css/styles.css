@@ -122,7 +122,8 @@ a {
 }
 
 .books-grid .book-container .book-caption p {
-	padding: 5px;
+	padding: 10px;
+	font-size:10px;
 	font-family: 'Sedgwick Ave', cursive;
         text-align: center;
 }

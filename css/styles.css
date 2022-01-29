@@ -43,8 +43,8 @@
 	background-color: #E0C4BA;
 }
 
-.content p {
-	padding: 100px;
+.content .content-p p {
+	padding: 20px;
 	font-size: 20px;
 }
 
@@ -121,7 +121,13 @@ a {
 	border: 2px solid black;
 }
 
-.books-grid .book-container .book-caption {
+.books-grid .book-container .book-caption p {
 	padding: 5px;
+	font-family: 'Sedgwick Ave', cursive;
+        text-align: center;
+}
+
+br {
+	background-color: #E0C4BA;
 }
 

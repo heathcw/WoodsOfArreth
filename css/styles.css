@@ -98,7 +98,7 @@ a {
 	font-size: 30px;
 	width: 100%;
 	text-align: center;
-	margin: 20px;
+	padding: 5px;
 	background-color: #94DE62;
 	color: #2D33B3;
 }
@@ -109,9 +109,19 @@ a {
 	grid-column-gap: 200px;
 	grid-row-gap: 50px;
 	background-color: #E0C4BA;
+	justify-items: center;
 }
 
-.books-conatiner {
+.books-grid .books-conatiner {
 	font-family: 'Sedgwick Ave', cursive;
+	text-align: center;
+}
+
+.books-grind .books-container img {
+	border: 2px solid black;
+}
+
+.books-grid .books-container p {
+	padding: 5px;
 }
 

@@ -1,12 +1,16 @@
+* {
+	* background-color: #E0C4BA;
+}
+
 .navbar-custom {
         background-color: #6A74EB;
 }
 
-.nav-link {
+.nav-link a {
 	color: black;
 }
 
-.navbar-brand {
+.navbar-brand img {
 	float:right;
 }
 
@@ -23,13 +27,27 @@
 	text-align: center;
 	float: center;
 	padding: 200px;
+	font-family: 'UnifrakturCook', cursive;
+	background-color: #94DE62;
+	border: 2px;
+	border-color: #669147;
+	width: 60%;
 }
 
 .content {
 	display: flex;
 	padding: 100px;
+	font-family: 'Sedgwick Ave', cursive;
+}
+
+.content p {
+	padding: 100px;
 }
 
 .footer {
 	display: flex;
+	background-color: #6A74EB;
+	position: fixed;
+	bottom: 0;
+	justify-content: space-between;
 }

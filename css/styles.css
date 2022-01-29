@@ -23,12 +23,12 @@
 	color: #2D33B3;
 	text-align: center;
 	align: center;
-	padding: 0px;
+	padding: 50px;
 	font-family: 'UnifrakturCook', cursive;
 	background-color: #94DE62;
-	border: 2px;
+	border: 10px;
 	border-color: #669147;
-	margin: 200px;
+	font-size: 40px;
 }
 
 .content {
@@ -40,7 +40,7 @@
 
 .content p {
 	padding: 100px;
-	font-size: 20;
+	font-size: 30px;
 }
 
 .footer {
@@ -50,4 +50,9 @@
 	bottom: 0;
 	justify-content: space-between;
 	width: 100%;
+}
+
+a {
+	color: #669147;
+	text-decoration: none;
 }

@@ -1,3 +1,6 @@
+.navbar {
+	color:black;
+}
 
 .navbar-custom {
         background-color: #6A74EB;
@@ -23,11 +26,10 @@
 	color: #2D33B3;
 	text-align: center;
 	align: center;
-	padding: 50px;
+	padding: 200px;
 	font-family: 'UnifrakturCook', cursive;
 	background-color: #94DE62;
-	border: 10px;
-	border-color: #669147;
+	border: 5px solid #669147;
 	font-size: 40px;
 }
 
@@ -40,7 +42,11 @@
 
 .content p {
 	padding: 100px;
-	font-size: 30px;
+	font-size: 20px;
+}
+
+.content-image {
+	height: 500px;
 }
 
 .footer {
@@ -50,6 +56,8 @@
 	bottom: 0;
 	justify-content: space-between;
 	width: 100%;
+	color: black;
+	text-decoration: none;
 }
 
 a {

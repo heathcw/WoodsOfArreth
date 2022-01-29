@@ -48,8 +48,9 @@
 	font-size: 20px;
 }
 
-.content-image {
+.content-image img {
 	height: 500px;
+	width: 333px;
 }
 
 .footer {

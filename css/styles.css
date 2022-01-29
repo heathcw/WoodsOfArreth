@@ -98,5 +98,20 @@ a {
 	font-size: 30px;
 	width: 100%;
 	text-align: center;
+	margin: 20px;
+	background-color: #94DE62;
+	color: #2D33B3;
+}
+
+.books-grid {
+	display: grid;
+	grid-template: auto auto auto auto auto / 1fr 1fr;
+	grid-column-gap: 200px;
+	grid-row-gap: 50px;
+	background-color: #E0C4BA;
+}
+
+.books-conatiner {
+	font-family: 'Sedgwick Ave', cursive;
 }
 

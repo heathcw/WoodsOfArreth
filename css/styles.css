@@ -4,6 +4,7 @@
 
 .navbar-custom {
         background-color: #669147;
+	border: 2px solid black;
 }
 
 .navbar .nav-link {
@@ -82,12 +83,12 @@
   	grid-column-gap: 20px;
   	grid-row-gap: 20px;
 	background-color: #E0C4BA;
+	padding: 20px;
 }
 
 .image img {
   	width: 100%;
   	border: 2px solid black;
-	padding: 20px;
 }
 
 .header {

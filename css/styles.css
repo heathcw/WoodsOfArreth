@@ -80,13 +80,23 @@ a {
 }
 
 .image-grid {
-  display: grid;
-  grid-template: auto auto auto auto auto / 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  	display: grid;
+  	grid-template: auto auto auto auto auto / 1fr 1fr;
+  	grid-column-gap: 20px;
+  	grid-row-gap: 20px;
+	background-color: #E0C4BA;
 }
 
 .image img {
-  width: 100%;
-  border: 2px solid black;
+  	width: 100%;
+  	border: 2px solid black;
+	padding: 20px;
 }
+
+.header {
+	font-family: 'Sedgwick Ave', cursive;
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+}
+

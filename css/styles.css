@@ -131,6 +131,8 @@
 	background-color: #E0C4BA;
 }
 
-.author-image {
+.author-image img {
 	border-radius: 50%;
+	width: 333;
+	height: auto;
 }

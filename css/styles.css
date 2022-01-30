@@ -139,7 +139,35 @@
 
 @media only screen and (max-width: 400px) {
 	* {
-		* max-width: 399px;
+		* max-width: 400px;
 		* max-height: auto;
 	}
+
+	.background-image {
+		width: 400px;
+		height: 400px;
+	}
+
+	.background-image h1 {
+		left: 144px;
+	}
+
+	.content {
+		padding: 36px;
+	}
+
+	.content-image img {
+		height: 180px;
+		width: 120px;
+	}
+	.content .content-p {
+		padding: 36px;
+	}
+
+	.books-grid {
+		grid-template: auto auto auto auto auto / 1fr;
+		grid-column-gap: 72px;
+		grid-row-gap: 18px;
+	}
+
 }

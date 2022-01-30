@@ -136,3 +136,10 @@
 	width: 333px;
 	height: auto;
 }
+
+@media only screen and (max-width: 400px) {
+	* {
+		* max-width: 399px;
+		* max-height: auto;
+	}
+}

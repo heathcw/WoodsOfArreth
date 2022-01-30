@@ -139,21 +139,22 @@
 
 @media only screen and (max-width: 400px) {
 	* {
-		* max-width: 400px;
+		* max-width: 354px;
 		* max-height: auto;
 	}
 
 	.background-image {
-		width: 400px;
-		height: 400px;
+		width: 354px;
+		height: 228px;
 	}
 
 	.background-image h1 {
-		left: 144px;
+		left: 50px;
 	}
 
 	.content {
 		padding: 36px;
+		display: block;
 	}
 
 	.content-image img {

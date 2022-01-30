@@ -64,6 +64,7 @@
 	width: 100%;
 	color: black;
 	text-decoration: none;
+	border: 2px solid black;
 
 }
 
@@ -130,3 +131,6 @@
 	background-color: #E0C4BA;
 }
 
+.author-image {
+	border-radius: 50%;
+}

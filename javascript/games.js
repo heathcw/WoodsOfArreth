@@ -1,3 +1,6 @@
+function Random(max) {
+	return Math.floor(Math.random() * max);
+}
 document.getElementById("gameGriffin").addEventListener("click", function(event) {
 	event.preventDefault();
 	document.querySelector(".content").innerHTML = "";
@@ -36,7 +39,7 @@ document.getElementById("gameGriffin").addEventListener("click", function(event)
 		.then(function(response) {
 			return response.json();
 		}).then(function(json) {
-			let random = Math.random(4);
+			let random = Random(4);
 			if (random == 0) {
 				childNode.innerHTML = "No, " + json.text;
 			}

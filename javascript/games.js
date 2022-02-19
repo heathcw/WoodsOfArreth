@@ -11,7 +11,7 @@ document.getElementById("gameGriffin").addEventListener("click", function(event)
 	document.querySelector(".content .griffin").appendChild(childNode);
 	let urlJoke = "https://geek-jokes.sameerkumar.website/api?format=json";
 	let urlFact = "https://asli-fun-fact-api.herokuapp.com/";
-	let urlSubmit = "https://zenquotes.io/api/random";
+	let urlSubmit = "https://quoteclear.web.app/api/random";
 	document.getElementById("joke").addEventListener("click", function(event) {
 		event.preventDefault();
 		fetch(urlJoke)
@@ -38,13 +38,13 @@ document.getElementById("gameGriffin").addEventListener("click", function(event)
 		}).then(function(json) {
 			let random = Math.random(4);
 			if (random == 0) {
-				childNode.innerHTML = "No, " + json.q;
+				childNode.innerHTML = "No, " + json.text;
 			}
 			else if (random == 1) {
-				childNode.innerHTML = "Yes! " + json.q;
+				childNode.innerHTML = "Yes! " + json.text;
 			}
 			else if (random == 2) {
-				childNode.innerHTML = "Maybe... " + json.q;
+				childNode.innerHTML = "Maybe... " + json.text;
 			}
 			else {
 				childNode.innerHTML = "Ask again later."

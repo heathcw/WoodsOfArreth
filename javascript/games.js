@@ -16,7 +16,7 @@ document.getElementById("gameGriffin").addEventListener("click", function(event)
 			return response.json();
 		}).then(function(json) {
 			let child = "<p>" + json.joke + "</p>";
-			document.querySelector(".griffin").appendChild(child);
+			document.querySelector(".content .griffin").appendChild(child);
 		});
 	});
 });

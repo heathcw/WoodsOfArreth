@@ -2,12 +2,10 @@ function Random(max) {
 	return Math.floor(Math.random() * max);
 }
 function NextDecision(decisionA, decisionB) {
-	let valueA = decisionA;
-	console.log(decisionA);
-	console.log(valueA);
-	let valueB = decisionB;
-	document.getElementById('a').innerHTML = "<input type='submit' value=" + valueA + "></input>";
-	document.getElementById('b').innerHTML = "<input type='submit' value=" + valueB + "></input>";
+	let valueA = "value= '" + decisionA + "'";
+	let valueB = "value= '" + decisionB + "'";
+	document.getElementById('a').innerHTML = "<input type='submit' " + valueA + "></input>";
+	document.getElementById('b').innerHTML = "<input type='submit' " + valueB + "></input>";
 }
 document.getElementById("gameGriffin").addEventListener("click", function(event) {
 	event.preventDefault();

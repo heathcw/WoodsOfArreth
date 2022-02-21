@@ -140,17 +140,28 @@
 	width: 340px;
 	height: 340px;
 }
+
+#gameTroll {
+	width: 340px;
+	height: 340px;
+}
+
+figure {
+	border: solid 2px black;
+}
+
 figcaption {
 	font-size:20px;
 }
 .content .griffin img {
 	width: 340px;
-	height 340px;
+	height: 340px;
 }
 .content .griffin p {
 	border: solid 2px black;
 	width: 340px;
 	height: 100px;
+	background-color: #d4d4d4;
 }
 .content .griffin {
 	float: right;

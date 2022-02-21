@@ -7,11 +7,11 @@ function NextDecision(decisionA, decisionB) {
 	document.getElementById('a').innerHTML = "<input type='submit' " + valueA + "></input>";
 	document.getElementById('b').innerHTML = "<input type='submit' " + valueB + "></input>";
 }
-const delay = ms => new Promise(res => setTimeout(res, ms));
 function ItGotYou() {
 	NextDecision("","");
-	delay(500000);
-	window.location.reload();
+	setTimeout(function() {
+		window.location.reload();
+	}, 5000);
 }
 document.getElementById("gameGriffin").addEventListener("click", function(event) {
 	event.preventDefault();

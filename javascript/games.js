@@ -7,6 +7,7 @@ function NextDecision(decisionA, decisionB) {
 	document.getElementById('a').innerHTML = "<input type='submit' " + valueA + "></input>";
 	document.getElementById('b').innerHTML = "<input type='submit' " + valueB + "></input>";
 }
+const delay = ms => new Promise(res => setTimeout(res, ms));
 document.getElementById("gameGriffin").addEventListener("click", function(event) {
 	event.preventDefault();
 	document.querySelector(".books-grid").innerHTML = "";
@@ -109,7 +110,8 @@ document.getElementById("gameTroll").addEventListener("click", function(event) {
 		});
 		document.getElementById('b').addEventListener("click", function(event) {
 			document.querySelector(".books-grid .gameEvents").innerHTML = "<p>It's loud.<br>It's breathing down your neck.<br>It got you.</p>";
-			NextDecision("","");
+			await delay(5000);
+			window.location.reload();
 		});
 	});
 });

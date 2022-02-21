@@ -143,12 +143,20 @@
 figcaption {
 	font-size:20px;
 }
-.content .griffin {
+.content .griffin img {
 	width: 340px;
 	height 340px;
 }
+.content .griffin p {
+	border: solid 2px black;
+	width: 340px;
+	height: 100px;
+}
 
-.content .buttons {
+.content .buttons .joke{
+	margin: 10px;
+}
+.content .buttons .fact{
 	margin: 10px;
 }
 @media only screen and (max-width: 400px) {

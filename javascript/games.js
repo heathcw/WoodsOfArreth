@@ -9,7 +9,8 @@ function NextDecision(decisionA, decisionB) {
 }
 const delay = ms => new Promise(res => setTimeout(res, ms));
 function ItGotYou() {
-	delay(5000);
+	NextDecision("","");
+	delay(500000);
 	window.location.reload();
 }
 document.getElementById("gameGriffin").addEventListener("click", function(event) {
@@ -114,8 +115,7 @@ document.getElementById("gameTroll").addEventListener("click", function(event) {
 		});
 		document.getElementById('b').addEventListener("click", function(event) {
 			document.querySelector(".books-grid .gameEvents").innerHTML = "<p>It's loud.<br>It's breathing down your neck.<br>It got you.</p>";
-			delay(5000);
-			window.location.reload();
+			ItGotYou();
 		});
 	});
 });

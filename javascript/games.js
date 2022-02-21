@@ -87,7 +87,7 @@ document.getElementById("gameTroll").addEventListener("click", function(event) {
 			});
 		});
 	});
-	document.geyElementById('b').addEventListener("click",function(event) {
+	document.getElementById('b').addEventListener("click",function(event) {
 		document.querySelector(".content .game-box .gameEvents").innerHTML = "<p>There's a door.<br>The door is locked.<br>It's getting warmer.<br>Do you...</p>";
                 NextDecision("Check to the left for a key?","Bang on the door?");
 		document.getElementById('a').addEventListener("click", function(event) {

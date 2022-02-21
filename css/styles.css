@@ -153,37 +153,36 @@ figure {
 figcaption {
 	font-size:20px;
 }
-.content .griffin img {
+.books-grid .griffin img {
 	width: 340px;
 	height: 340px;
 }
-.content .griffin p {
+.books-grid .griffin p {
 	border: solid 2px black;
 	width: 340px;
 	height: 100px;
 	background-color: #d4d4d4;
 }
-.content .griffin {
+.books-grid .griffin {
 	float: right;
 	padding-right: 20px;
 }
 
-.content .buttons #joke{
+.books-grid .buttons #joke{
 	margin: 10px;
 }
-.content .buttons #fact{
+.books-grid .buttons #fact{
 	margin: 10px;
 }
-.content .spacer {
+.books-grid .spacer {
 	width: 100px;
 }
-.content .game-box {
-	float: center;
+.books-grid .game-box {
+	justify-content: center;
 }
-.content .game-box .gameEvents {
+.books-grid .game-box .gameEvents {
 	font-size: 26px;
 	border: 2px dashed black;
-	width: 60%;
 	height: auto;
 	padding: 10px;
 }

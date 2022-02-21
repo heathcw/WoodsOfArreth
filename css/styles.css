@@ -152,11 +152,15 @@ figcaption {
 	width: 340px;
 	height: 100px;
 }
+.content .griffin {
+	float: right;
+	padding-right: 20px;
+}
 
-.content .buttons .joke{
+.content .buttons #joke{
 	margin: 10px;
 }
-.content .buttons .fact{
+.content .buttons #fact{
 	margin: 10px;
 }
 @media only screen and (max-width: 400px) {

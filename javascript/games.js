@@ -9,7 +9,7 @@ function NextDecision(decisionA, decisionB) {
 }
 const delay = ms => new Promise(res => setTimeout(res, ms));
 function ItGotYou() {
-	await delay(5000);
+	delay(5000);
 	window.location.reload();
 }
 document.getElementById("gameGriffin").addEventListener("click", function(event) {

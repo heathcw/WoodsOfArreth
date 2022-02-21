@@ -19,8 +19,8 @@ document.getElementById("gameGriffin").addEventListener("click", function(event)
 	let childNode = document.createElement("p");
 	let image = document.createElement("img");
 	image.src = 'https://easydrawingguides.com/wp-content/uploads/2020/06/Griffin-Step-10.png';
-	document.querySelector(".content .griffin").appendChild(childNode);
-	document.querySelector(".content .griffin").appendChild(image);
+	document.querySelector(".books-grid .griffin").appendChild(childNode);
+	document.querySelector(".books-grid .griffin").appendChild(image);
 	let urlJoke = "https://geek-jokes.sameerkumar.website/api?format=json";
 	let urlFact = "https://asli-fun-fact-api.herokuapp.com/";
 	let urlSubmit = "https://quoteclear.web.app/api/random";

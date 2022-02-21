@@ -16,7 +16,7 @@ document.getElementById("gameGriffin").addEventListener("click", function(event)
 	newContent += "<input id='joke' type='submit' value='Tell me a joke!'></input><br>";
 	newContent += "<input id='fact' type='submit' value='How are you?'></input><br>";
 	newContent += "<div><input id='question' type='text' placeholder='Ask a yes or no question!'></input><input id='submit' type='submit' value='Ask'></input></div><br>";
-	newContent += "</div><div class='griffin'></div>";
+	newContent += "</div><div class='spacer'></div><div class='griffin'></div>";
 	document.querySelector(".content").innerHTML = newContent;
 	let childNode = document.createElement("p");
 	let image = document.createElement("img");

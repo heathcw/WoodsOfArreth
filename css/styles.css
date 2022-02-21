@@ -177,13 +177,11 @@ figcaption {
 .books-grid .spacer {
 	width: 100px;
 }
-.books-grid .game-box {
-	justify-content: center;
-}
-.books-grid .game-box .gameEvents {
+.books-grid .gameEvents {
 	font-size: 26px;
 	border: 2px dashed black;
-	height: auto;
+	height: 340px;
+	width: auto;
 	padding: 10px;
 }
 

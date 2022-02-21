@@ -2,8 +2,12 @@ function Random(max) {
 	return Math.floor(Math.random() * max);
 }
 function NextDecision(decisionA, decisionB) {
-	document.getElementById('a').innerHTML = "<input type='submit' value=" + decisionA + "></input>";
-	document.getElementById('b').innerHTML = "<input type='submit' value=" + decisionB + "></input>";
+	let valueA = decisionA;
+	console.log(decisionA);
+	console.log(valueA);
+	let valueB = decisionB;
+	document.getElementById('a').innerHTML = "<input type='submit' value=" + valueA + "></input>";
+	document.getElementById('b').innerHTML = "<input type='submit' value=" + valueB + "></input>";
 }
 document.getElementById("gameGriffin").addEventListener("click", function(event) {
 	event.preventDefault();
@@ -72,13 +76,13 @@ document.getElementById("gameTroll").addEventListener("click", function(event) {
 	document.querySelector(".content").innerHTML = newContent;
 	document.getElementById('a').addEventListener("click", function(event) {
 		document.querySelector(".content .game-box .gameEvents").innerHTML = "<p>No Flashlight.<br>It's getting warmer.<br>It's getting louder.<br>Do you...</p>";
-		NextDecision("Follow the noise?","Walk forward?");
+		NextDecision("A. Follow the noise?","B. Walk forward?");
 		document.getElementById('a').addEventListener("click", function(event) {
 			document.querySelector(".content .game-box .gameEvents").innerHTML = "<p>It's hot.<br>It's breathing down your neck.<br>It got you.</p>";
 		});
 		document.getElementById('b').addEventListener("click", function(event) {
 			document.querySelector(".content .game-box .gameEvents").innerHTML = "<p>There's a door.<br>The door is locked.<br>It's Hot.<br>Do you...</p>";
-                	NextDecision("Call for help?","Bang on the door?");
+                	NextDecision("A. Call for help?","B. Bang on the door?");
 			document.getElementById('a').addEventListener("click", function(event) {
 				document.querySelector(".content .game-box .gameEvents").innerHTML = "<p>Nobody heard.<br>It covers your mouth.<br>It got you.</p>";
 			});
@@ -89,10 +93,10 @@ document.getElementById("gameTroll").addEventListener("click", function(event) {
 	});
 	document.getElementById('b').addEventListener("click",function(event) {
 		document.querySelector(".content .game-box .gameEvents").innerHTML = "<p>There's a door.<br>The door is locked.<br>It's getting warmer.<br>Do you...</p>";
-                NextDecision("Check to the left for a key?","Bang on the door?");
+                NextDecision("A. Check to the left for a key?","B. Bang on the door?");
 		document.getElementById('a').addEventListener("click", function(event) {
 			document.querySelector(".content .game-box .gameEvents").innerHTML = "<p>It's hot.<br>It's breathing down your neck.<br>There's a key on the floor.<br>Do you...</p>";
-                	NextDecision("Unlock the door?","Turn around?");
+                	NextDecision("A. Unlock the door?","B. Turn around?");
 			document.getElementById('a').addEventListener("click", function(event) {
 				document.querySelector(".content .game-box .gameEvents").innerHTML = "<p>You run out into a bright open field.<br>You let out a sigh of relief.<br>You are free.<br>But so is the It.</p>"
 			});

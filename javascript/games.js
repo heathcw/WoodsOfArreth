@@ -11,7 +11,7 @@ function ItGotYou() {
 	NextDecision("","");
 	setTimeout(function() {
 		window.location.reload();
-	}, 5000);
+	}, 2500);
 }
 document.getElementById("gameGriffin").addEventListener("click", function(event) {
 	event.preventDefault();
@@ -83,18 +83,18 @@ document.getElementById("gameTroll").addEventListener("click", function(event) {
 		NextDecision("A. Follow the noise?","B. Walk forward?");
 		document.getElementById('a').addEventListener("click", function(event) {
 			document.querySelector(".books-grid .gameEvents").innerHTML = "<p>It's hot.<br>It's breathing down your neck.<br>It got you.</p>";
-			NextDecision("","");
+			ItGotYou();
 		});
 		document.getElementById('b').addEventListener("click", function(event) {
 			document.querySelector(".books-grid .gameEvents").innerHTML = "<p>There's a door.<br>The door is locked.<br>It's Hot.<br>Do you...</p>";
                 	NextDecision("A. Call for help?","B. Bang on the door?");
 			document.getElementById('a').addEventListener("click", function(event) {
 				document.querySelector(".books-grid .gameEvents").innerHTML = "<p>Nobody heard.<br>It covers your mouth.<br>It got you.</p>";
-				NextDecision("","");
+				ItGotYou();
 			});
 			document.getElementById('b').addEventListener("click", function(event) {
 				document.querySelector(".books-grid .gameEvents").innerHTML = "<p>It's loud.<br>It's breathing down your neck.<br>It got you.</p>";
-				NextDecision("","");
+				ItGotYou();
 			 });
 		});
 	});
@@ -106,7 +106,7 @@ document.getElementById("gameTroll").addEventListener("click", function(event) {
                 	NextDecision("A. Unlock the door?","B. Turn around?");
 			document.getElementById('a').addEventListener("click", function(event) {
 				document.querySelector(".books-grid .gameEvents").innerHTML = "<p>You run out into a bright open field.<br>You let out a sigh of relief.<br>You are free.<br>But so is the It.</p>"
-				NextDecision("","");
+				ItGotYou();
 			});
 			document.getElementById('b').addEventListener("click", function(event) {
                                 document.querySelector(".books-grid .gameEvents").innerHTML = "<p>It's horrifying.<br>You stab it with the key.<br>It screeches.<br>Your ears bleed.<br>It got you.</p>"

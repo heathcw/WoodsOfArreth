@@ -142,6 +142,10 @@ nav a.router-link-exact-active {
 }
 
 @media only screen and (max-width: 400px) {
+  * {
+    max-width: 100%;
+  }
+
   .background-image {
     width: 100%;
     height: 216px;

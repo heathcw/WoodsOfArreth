@@ -167,7 +167,8 @@ export default {
         document.querySelector(".books-grid .gameEvents").innerHTML =
           "<p>You run out into a bright open field.<br>You let out a sigh of relief.<br>You are free.<br>But so is It.</p>";
         setTimeout(function () {
-          window.location.reload();
+          this.trollScreen = false;
+          this.homeScreen = true;
         }, 2500);
       } else if (this.choiceA == "A. Call for help?") {
         this.choiceA = "";
@@ -175,7 +176,8 @@ export default {
         document.querySelector(".books-grid .gameEvents").innerHTML =
           "<p>Nobody heard.<br>It covers your mouth.<br>It got you.</p>";
         setTimeout(function () {
-          window.location.reload();
+          this.trollScreen = false;
+          this.homeScreen = true;
         }, 2500);
       }
     },
@@ -310,5 +312,13 @@ figcaption {
   height: 340px;
   width: 340px;
   padding: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .books-grid {
+    grid-template: auto auto auto auto auto / 1fr;
+    grid-column-gap: 72px;
+    grid-row-gap: 18px;
+  }
 }
 </style>

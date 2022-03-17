@@ -141,7 +141,7 @@ nav a.router-link-exact-active {
   border: 2px solid black;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
   * {
     max-width: 100%;
   }

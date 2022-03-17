@@ -314,7 +314,7 @@ figcaption {
   padding: 10px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
   .books-grid {
     grid-template: auto auto auto auto auto / 1fr;
     grid-column-gap: 72px;

@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 const mongoose = require('mongoose');
 
 // connect to the database
-mongoose.connect('mongodb+srv://heathcw:pichu13@cluster0.hrjao.mongodb.net/arreth', {
+mongoose.connect('mongodb+srv://heathcw:@cluster0.hrjao.mongodb.net/arreth', {
   useNewUrlParser: true
 });
 

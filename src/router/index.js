@@ -4,6 +4,7 @@ import HomeView from "../views/HomeView.vue";
 import AuthorView from "../views/AuthorView.vue";
 import BooksView from "../views/BooksView.vue";
 import GamesView from "../views/GamesView.vue";
+import CommunityView from "../views/CommunityView.vue";
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const routes = [
     path: "/games",
     name: "games",
     component: GamesView,
+  },
+  {
+    path: "/community",
+    name: "community",
+    component: CommunityView,
   },
 ];
 

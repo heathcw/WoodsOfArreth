@@ -21,8 +21,28 @@
       "
     >
       <h1>The Woods of Arreth</h1>
+      <h2>
+        <router-link to="/community">Community</router-link>
+      </h2>
     </div>
     <router-view />
+    <div class="animations">
+      <div class="animation">
+        <img src="../public/fairy3-removebg-preview.png" />
+      </div>
+      <div class="animation1">
+        <img src="../public/fairy2-removebg-preview.png" />
+      </div>
+      <div class="animation2">
+        <img src="../public/fairy3-removebg-preview.png" />
+      </div>
+      <div class="animation3">
+        <img src="../public/fairy2-removebg-preview.png" />
+      </div>
+      <div class="animation4">
+        <img src="../public/fairy3-removebg-preview.png" />
+      </div>
+    </div>
     <div class="footer">
       <a class="git-link" href="https://github.com/heathcw/WoodsOfArreth"
         ><strong>GitHub</strong></a
@@ -93,6 +113,164 @@ nav a.router-link-exact-active {
   top: 50%;
   left: 450px;
 }
+
+.background-image h2 {
+  position: relative;
+  z-index: 900;
+  color: #2d33b3;
+  text-align: center;
+  vertical-align: center;
+  font-family: "UnifrakturCook", cursive;
+  background-color: #94de62;
+  border: 5px solid #669147;
+  font-size: 20px;
+  width: 200px;
+  top: 60%;
+  left: 550px;
+}
+
+.animations img {
+  position: fixed;
+  z-index: 10000;
+  width: 30px;
+  height: 30px;
+}
+
+.animations .animation img {
+  animation: fairy 10s linear 2s infinite normal;
+}
+
+.animations .animation1 img {
+  animation: fairyOne 10s linear 7s infinite normal;
+}
+
+.animations .animation2 img {
+  animation: fairyTwo 10s linear 5s infinite normal;
+}
+
+.animations .animation3 img {
+  animation: fairyThree 10s linear 8s infinite normal;
+}
+
+.animations .animation4 img {
+  animation: fairyFour 10s linear 1s infinite normal;
+}
+
+@keyframes fairy {
+  0% {
+    bottom: 0;
+    left: 20%;
+  }
+  25% {
+    bottom: 200px;
+    left: 15%;
+  }
+  50% {
+    bottom: 400px;
+    left: 20%;
+  }
+  75% {
+    bottom: 600px;
+    left: 15%;
+  }
+  100% {
+    bottom: 800px;
+    left: 20%;
+  }
+}
+
+@keyframes fairyOne {
+  0% {
+    bottom: 0;
+    left: 40%;
+  }
+  25% {
+    bottom: 200px;
+    left: 35%;
+  }
+  50% {
+    bottom: 400px;
+    left: 40%;
+  }
+  75% {
+    bottom: 600px;
+    left: 35%;
+  }
+  100% {
+    bottom: 800px;
+    left: 40%;
+  }
+}
+
+@keyframes fairyTwo {
+  0% {
+    bottom: 0;
+    left: 60%;
+  }
+  25% {
+    bottom: 200px;
+    left: 55%;
+  }
+  50% {
+    bottom: 400px;
+    left: 60%;
+  }
+  75% {
+    bottom: 600px;
+    left: 55%;
+  }
+  100% {
+    bottom: 800px;
+    left: 60%;
+  }
+}
+
+@keyframes fairyThree {
+  0% {
+    bottom: 0;
+    left: 80%;
+  }
+  25% {
+    bottom: 200px;
+    left: 75%;
+  }
+  50% {
+    bottom: 400px;
+    left: 80%;
+  }
+  75% {
+    bottom: 600px;
+    left: 75%;
+  }
+  100% {
+    bottom: 800px;
+    left: 80%;
+  }
+}
+
+@keyframes fairyFour {
+  0% {
+    bottom: 0;
+    left: 97%;
+  }
+  25% {
+    bottom: 200px;
+    left: 95%;
+  }
+  50% {
+    bottom: 400px;
+    left: 97%;
+  }
+  75% {
+    bottom: 600px;
+    left: 95%;
+  }
+  100% {
+    bottom: 800px;
+    left: 97%;
+  }
+}
+
 .footer {
   display: flex;
   background-color: #669147;
@@ -146,6 +324,10 @@ nav a.router-link-exact-active {
     max-width: 100%;
   }
 
+  nav {
+    width: 100%;
+  }
+
   .background-image {
     width: 100%;
     height: 216px;
@@ -155,6 +337,10 @@ nav a.router-link-exact-active {
     width: 144px;
     font-size: 20px;
     left: 118px;
+  }
+
+  .background-image h2 {
+    left: 25%;
   }
 
   .content {

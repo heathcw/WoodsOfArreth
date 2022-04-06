@@ -1,3 +1,4 @@
+require('./foobar.config.js');
 const express = require('express');
 const bodyParser = require("body-parser");
 const multer = require('multer');
@@ -16,8 +17,12 @@ app.use(bodyParser.urlencoded({
 
 const mongoose = require('mongoose');
 
+const userName = process.env.MONGOUSER;
+const password = process.env.MONGOPASSWORD;
+const url = 'mongodb+srv://' + userName + ':' + password + '@cluster0.hrjao.mongodb.net/arreth';
+
 // connect to the database
-mongoose.connect('mongodb+srv://heathcw:@cluster0.hrjao.mongodb.net/arreth', {
+mongoose.connect(url, {
   useNewUrlParser: true
 });
 
